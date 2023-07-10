@@ -13,5 +13,6 @@ let package = Package(
             name: "Segmentio",
             path: "./Segmentio/Source"
         )
-    ]
+    ],
+    swiftLanguageVersions: [.version("5.0"))]
 )
