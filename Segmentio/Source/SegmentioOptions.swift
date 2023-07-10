@@ -189,13 +189,13 @@ public typealias SegmentioStates = (defaultState: SegmentioState, selectedState:
 public struct SegmentioOptions {
     
     var backgroundColor: UIColor
-    var segmentPosition: SegmentioPosition
+    public var segmentPosition: SegmentioPosition
     var scrollEnabled: Bool
     var horizontalSeparatorOptions: SegmentioHorizontalSeparatorOptions?
     var verticalSeparatorOptions: SegmentioVerticalSeparatorOptions?
     var indicatorOptions: SegmentioIndicatorOptions?
     var imageContentMode: UIView.ContentMode
-    var labelTextAlignment: NSTextAlignment
+    public var labelTextAlignment: NSTextAlignment
     var labelTextNumberOfLines: Int
     var states: SegmentioStates
     var animationDuration: CFTimeInterval
