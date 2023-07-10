@@ -214,7 +214,7 @@ public struct SegmentioOptions {
         self.states = SegmentioStates(defaultState: SegmentioState(),
                                         selectedState: SegmentioState(),
                                         highlightedState: SegmentioState())
-        self.animationDuration = 0.1
+        self.animationDuration = 0.2
         self.userInterractionEnabled = true
     }
 
@@ -231,7 +231,8 @@ public struct SegmentioOptions {
                                                                  selectedState: SegmentioState(),
                                                                  highlightedState: SegmentioState()),
                 animationDuration: CFTimeInterval = 0.1,
-                userInterractionEnabled: Bool = true) {
+                userInterractionEnabled: Bool = true
+    ) {
         self.backgroundColor = backgroundColor
         self.segmentPosition = segmentPosition
         self.scrollEnabled = scrollEnabled

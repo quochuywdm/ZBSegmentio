@@ -10,8 +10,8 @@ import UIKit
 
 class SegmentioCell: UICollectionViewCell {
     
-    let padding: CGFloat = 8
-    static let segmentTitleLabelHeight: CGFloat = 22
+    let padding: CGFloat = 4
+    static let segmentTitleLabelHeight: CGFloat = 25
     
     var verticalSeparatorView: UIView?
     var segmentTitleLabel: UILabel?
@@ -130,6 +130,7 @@ class SegmentioCell: UICollectionViewCell {
             }
         }
         configurateBadgeWithCount(content.badgeCount, color: content.badgeColor)
+        segmentImageView?.tintColor = options.states.defaultState.titleTextColor
     }
     
     func configure(selected: Bool, selectedImage: UIImage? = nil, image: UIImage? = nil) {
